@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Главная</title>
+  <title>Расположение</title>
   <meta name = "format-detection" content = "telephone=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">   
   <meta charset="utf-8">
@@ -14,7 +14,13 @@
   <script src="js/jquery.js"></script>
   <script src="js/jquery-migrate-1.1.1.js"></script>
   <script src="js/superfish.js"></script>
+  <script src="js/touchTouch.jquery.js"></script>
 	<script src="js/script.js"></script>
+  <script>
+    $(function() {
+      $('.zoom_link').touchTouch();
+    })
+  </script>
 	<!--[if lt IE 8]>
    <div style=' clear: both; text-align:center; position: relative;'>
      <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -28,7 +34,7 @@
     <![endif]-->
 </head>
 <body>
-<div class="bg_box1">
+<div class="bg_box3">
   
 </div>
 <div class="global_wrap">
@@ -39,7 +45,7 @@
       <nav class="f_left">
         <span class="nav_btn"></span>
         <ul class="sf-menu cuprum">
-          <li class="menu_item current"><a class="menu_link" href="index.html">Главная</a></li>
+          <li class="menu_item"><a class="menu_link" href="index.html">Главная</a></li>
           <li class="menu_item"><a class="menu_link" href="project_about.html">О проекте</a>
             <ul class="sub_menu">
               <li class="sub_menu_item"><a href="project_about.html" class="sub_menu_link">Описание</a></li>
@@ -48,7 +54,7 @@
               <li class="sub_menu_item"><a href="project_members.html" class="sub_menu_link">Участники</a></li>
             </ul>
           </li>
-          <li class="menu_item"><a class="menu_link" href="location.html">Расположение</a></li>
+          <li class="menu_item current"><a class="menu_link" href="location.html">Расположение</a></li>
           <li class="menu_item"><a class="menu_link" href="gallery.html">Галерея</a></li>
           <li class="menu_item"><a class="menu_link" href="index-4.html">Свободные помещения</a></li>
           <li class="menu_item"><a class="menu_link" href="index-5.html">Новости</a></li>
@@ -69,52 +75,40 @@
     </div>
   </div>
   <!--==============================content================================-->
-  
-    <section class="p_rel" id="content">
-      <div class="p_abs cuprum bold btns btns_col_wrap">
-        <div class="clearfix main">
-          <div class="d_tc btns_col">
-            <a href="#" class="big_btn_pdf">Скачать презентацию</a>
+    <section class="p_rel cont_pad" id="content">
+     <div class="main">
+       <div class="clearfix content_box">
+         <aside class="dk_green_bg d_tc cuprum content_sidebar">
+           <div class="content_sidebar__inner">
+             <h2 class="title2">Расположение</h2>
+             <ul class="list2">
+               <li class="list2_item current"><a href="#" class="list2_link">Карта района</a></li>
+               <li class="list2_item"><a href="#" class="list2_link">Ситуационная карта</a></li>
+             </ul>
+           </div>
+         </aside>
+         <article class="green_bg d_tc content_text">
+          <h1 class="cuprum title1 green_bg"><span>Карта района</span></h1>
+          <div class="content_text__inner2">
+            <div class="clearfix location_box">
+              <ul class="list3 f_left location_details">
+                <li class="list3_item">Бизнес центр расположен на юго-западе Москвы, в быстро развива- ющемся деловом районе, окруженном зелеными зонами. </li>
+                <li class="list3_item">Офисное здание находится на основной магистрали Москвы – Ленинском проспекте, что позволяет быстро доехать до Третьего Траспортного кольца - транспортной артерии города. </li> 
+                <li class="list3_item">
+                <p>В непосредственной близости расположены проспект Вернадского, Киевское шоссе и Профсоюзная улица.</p> 
+                Удобное расположение дает возможность быстро добираться до основных центров деловой активности во всех частях города, а также до международных аэропортов Домодедово и Внуково. </li>
+                <li class="list3_item">Здание расположено между двумя станциями метро – Юго-Западная и Коньково. В настоящий момент в утренние и вечерние часы орга- низовано движение автобусов от метро «Юго-Западная» до бизнес центра и обратно.</li>
+                <li class="list3_item">В непосредственной близости также находятся остановки обще- ственного транспорта. Новая станция метро «Тропарево» будет </li>
+              </ul>
+              <div class="wrapper cuprum location_map">
+                <a href="images/location_img.jpg" class="zoom_link">увеличить</a>
+                <img src="images/location_img.jpg" class="border_img" alt="">
+              </div>
+            </div>
           </div>
-          <div class="d_tc btns_col">
-            <a href="#" class="big_btn_video">Посмотреть видеоролик</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="advantage_box">
-        <div class="clearfix main">
-          <article class="advantage_col">
-            <ul class="cuprum list1">
-              <li class="list1_item">
-                <a href="#" class="list1_link">
-                  Офисные помещения в аренду <br> <strong class="fz_30">с отделкой от 250 кв.м.</strong>
-                </a>
-              </li>
-              <li class="list1_item">
-                <a href="#" class="list1_link">
-                  <strong class="fz_30">Золотой сертификат</strong> немецкого общества по экологическому строительству DGNB
-                </a>
-              </li>
-            </ul>
-          </article>
-          <article class="advantage_col">
-            <ul class="cuprum list1">
-              <li class="list1_item">
-                <a href="#" class="list1_link">
-                  Проект международного девелопера <br>
-                  <strong class="fz_30">Raiffeisen evolution</strong>
-                </a>
-              </li>
-              <li class="list1_item">
-                <a href="#" class="list1_link">
-                  Расположение в экологически благоприятном районе <strong class= "fz_30">рядом с парком</strong>
-                </a>
-              </li>
-            </ul>
-          </article>
-        </div>
-      </div>
+         </article>
+       </div>
+     </div>
     </section>
 </div>
 <!--==============================footer=================================-->

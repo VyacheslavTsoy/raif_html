@@ -10,6 +10,10 @@
 	.header_inner{padding-left: 20px;}
 	nav{padding-left: 20px;}
 	.advantage_col{width: 460px;}
+	.global_wrap{
+		height: auto;
+		margin-bottom: 0;
+	}
 
 
 }
