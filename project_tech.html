@@ -14,6 +14,8 @@
   <script src="js/jquery.js"></script>
   <script src="js/jquery-migrate-1.1.1.js"></script>
   <script src="js/superfish.js"></script>
+  <script src="js/mobile_menu.js"></script>
+  <script src="js/jquery.equalheights.js"></script>
 	<script src="js/script.js"></script>
 	<!--[if lt IE 8]>
    <div style=' clear: both; text-align:center; position: relative;'>
@@ -28,157 +30,193 @@
     <![endif]-->
 </head>
 <body>
-<div class="bg_box2">
-  
-</div>
-<div class="global_wrap">
-  <!--==============================header=================================-->
-  <header>
-    <div class="clearfix header_inner">
-      <h1 class="f_left logo"><a href="index.html">Leninsky Prospect</a></h1>
-      <nav class="f_left">
-        <span class="nav_btn"></span>
-        <ul class="sf-menu cuprum">
-          <li class="menu_item"><a class="menu_link" href="index.html">Главная</a></li>
-          <li class="menu_item current"><a class="menu_link" href="project_about.html">О проекте</a>
-            <ul class="sub_menu">
-              <li class="sub_menu_item"><a href="project_about.html" class="sub_menu_link">Описание</a></li>
-              <li class="sub_menu_item"><a href="project_tech.html" class="sub_menu_link">Технические характеристики</a></li>
-              <li class="sub_menu_item"><a href="project_dev.html" class="sub_menu_link">Девелопер</a></li>
-              <li class="sub_menu_item"><a href="project_members.html" class="sub_menu_link">Участники</a></li>
-            </ul>
-          </li>
-          <li class="menu_item"><a class="menu_link" href="location.html">Расположение</a></li>
-          <li class="menu_item"><a class="menu_link" href="gallery.html">Галерея</a></li>
-          <li class="menu_item"><a class="menu_link" href="index-4.html">Свободные помещения</a></li>
-          <li class="menu_item"><a class="menu_link" href="index-5.html">Новости</a></li>
-          <li class="menu_item"><a class="menu_link" href="index-6.html">Контакты</a></li>
-       </ul>
-       <div class="clear"></div>
-      </nav>
-    </div>
-  </header>
-  <!--==============================Status/Languages================================-->
-  <div class="project_status_box">
-    <div class="cuprum project_status">
-      <div class="project_status__inner">Действующий Бизнес-центр класса А на Юго-Западе Москвы</div>
-      <ul class="langs_list">
-        <li class="langs_list__item"><a class="langs_link current" href="#">ru</a></li>
-        <li class="langs_list__item"><a class="langs_link" href="#">en</a></li>
-      </ul>
-    </div>
+<div class="outer_wrap">
+  <div class="bg_box2">
+    
   </div>
-  <!--==============================content================================-->
-    <section class="p_rel cont_pad" id="content">
-     <div class="main">
-       <div class="clearfix content_box">
-         <aside class="red_bg d_tc cuprum content_sidebar">
-           <div class="content_sidebar__inner">
-             <h2 class="title2">О проекте</h2>
-             <ul class="list2">
-               <li class="list2_item"><a href="project_about.html" class="list2_link">Описание</a></li>
-               <li class="list2_item current"><a href="project_tech.html" class="list2_link">Технические характеристики</a></li>
-               <li class="list2_item"><a href="project_dev.html" class="list2_link">Девелопер</a></li>
-               <li class="list2_item"><a href="project_members.html" class="list2_link">Участники</a></li>
-             </ul>
-           </div>
-         </aside>
-         <article class="green_bg d_tc content_text var2">
-          <h1 class="cuprum title1"><span>Технические характеристрики</span></h1>
-          <div class="content_text__inner1">
-            <table class="details_table">
-              <tr>
-                <td class="details_col1">Общая площадь</td>
-                <td class="details_col2">22,650 м<sup>2</sup></td>
-              </tr>
-              <tr>
-                <td class="details_col1">Арендуемая площадь</td>
-                <td class="details_col2">15,400 м<sup>2</sup></td>
-              </tr>
-              <tr>
-                <td class="details_col1">Этажность:</td>
-                <td class="details_col2">10 этажей, включая 8 наземных этажей, цокольный и подземный этажи</td>
-              </tr>
-              <tr>
-                <td class="details_col1">Площадь типового этажа</td>
-                <td class="details_col2">1686 м<sup>2</sup></td>
-              </tr>
-              <tr>
-                <td class="details_col1">Высота от перекрытия до перекрытия:</td>
-                <td class="details_col2">3,60 м</td>
-              </tr>
-              <tr>
-                <td class="details_col1">Высота в чистоте:</td>
-                <td class="details_col2">2,95 м</td>
-              </tr>
-              <tr>
-                <td class="details_col1">Шаг колонн:</td>
-                <td class="details_col2">8х10 м</td>
-              </tr>
-              <tr>
-                <td class="details_col1">Нагрузка на перекрытия (офисы):</td>
-                <td class="details_col2">400 кг на м<sup>2</sup></td>
-              </tr>
-              <tr>
-                <td class="details_col1">Нагрузка на перекрытия (архив):</td>
-                <td class="details_col2">600 кг на м<sup>2</sup></td>
-              </tr>
-              <tr>
-                <td class="details_col1">Парковка</td>
-                <td class="details_col2">188 подземная / 38 наземная </td>
-              </tr>
-              <tr>
-                <td class="details_col1">Парковочный коэффициент</td>
-                <td class="details_col2">1:62 m<sup>2</sup></td>
-              </tr>
-              <tr>
-                <td class="details_col1">Лифты</td>
-                <td class="details_col2">3 лифта грузоподъемностью 1000 кг. </td>
-              </tr>
-            </table>
+  <div class="global_wrap">
+    <!--==============================header=================================-->
+    <header>
+      <div class="clearfix header_inner">
+        <span class="nav_btn"></span>
+        <h1 class="f_left logo"><a href="index.html">Leninsky Prospect</a></h1>
+        <nav class="f_left">
+          <div class="nav_scroll_bar">
+            <div class="wrapper cuprum nav_langs">
+              <a href="#" class="d_block nav_lang__item">en</a>
+              <a href="#" class="d_block nav_lang__item">ru</a>
+            </div>
+            <ul class="sf-menu cuprum">
+              <li class="menu_item">
+                <a class="menu_link" href="index.html">
+                  Главная
+                  <span class="icon_home"></span>
+                </a>
+              </li>
+              <li class="menu_item current">
+                <a class="menu_link" href="project_about.html">О проекте
+                  <span class="icon_about"></span>
+                </a>
+                <ul class="sub_menu">
+                  <li class="sub_menu_item"><a href="project_about.html" class="sub_menu_link">Описание</a></li>
+                  <li class="sub_menu_item"><a href="project_tech.html" class="sub_menu_link">Технические характеристики</a></li>
+                  <li class="sub_menu_item"><a href="project_dev.html" class="sub_menu_link">Девелопер</a></li>
+                  <li class="sub_menu_item"><a href="project_members.html" class="sub_menu_link">Участники</a></li>
+                </ul>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" href="location.html">Расположение
+                  <span class="icon_location"></span>
+                </a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" href="gallery.html">Галерея
+                  <span class="icon_gallery"></span>
+                </a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" href="premises.html">Свободные помещения
+                  <span class="icon_permisses"></span>
+                </a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" href="news.html">Новости
+                  <span class="icon_news"></span>
+                </a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" href="contacts.html">Контакты
+                  <span class="icon_contacts"></span>
+                </a>
+              </li>
+                   </ul>
           </div>
-         </article>
+         <div class="clear"></div>
+        </nav>
+      </div>
+    </header>
+    <!--==============================Status/Languages================================-->
+    <div class="project_status_box">
+      <div class="cuprum project_status">
+        <div class="project_status__inner">Действующий Бизнес-центр класса А на Юго-Западе Москвы</div>
+        <ul class="langs_list">
+          <li class="langs_list__item"><a class="langs_link current" href="#">ru</a></li>
+          <li class="langs_list__item"><a class="langs_link" href="#">en</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--==============================content================================-->
+      <section class="p_rel cont_pad" id="content">
+       <div class="main">
+         <div class="clearfix content_box">
+           <aside class="red_bg f_left cuprum content_sidebar maxheight">
+             <div class="content_sidebar__inner">
+               <h2 class="title2">О проекте</h2>
+               <ul class="list2">
+                 <li class="list2_item"><a href="project_about.html" class="list2_link">Описание</a></li>
+                 <li class="list2_item current"><a href="project_tech.html" class="list2_link">Технические характеристики</a></li>
+                 <li class="list2_item"><a href="project_dev.html" class="list2_link">Девелопер</a></li>
+                 <li class="list2_item"><a href="project_members.html" class="list2_link">Участники</a></li>
+               </ul>
+             </div>
+           </aside>
+           <article class="green_bg f_left content_text var2 maxheight">
+            <h1 class="cuprum title1"><span>Технические характеристрики</span></h1>
+            <div class="content_text__inner1">
+              <table class="details_table">
+                <tr>
+                  <td class="details_col1">Общая площадь</td>
+                  <td class="details_col2">22,650 м<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td class="details_col1">Арендуемая площадь</td>
+                  <td class="details_col2">15,400 м<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td class="details_col1">Этажность:</td>
+                  <td class="details_col2">10 этажей, включая 8 наземных этажей, цокольный и подземный этажи</td>
+                </tr>
+                <tr>
+                  <td class="details_col1">Площадь типового этажа</td>
+                  <td class="details_col2">1686 м<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td class="details_col1">Высота от перекрытия до перекрытия:</td>
+                  <td class="details_col2">3,60 м</td>
+                </tr>
+                <tr>
+                  <td class="details_col1">Высота в чистоте:</td>
+                  <td class="details_col2">2,95 м</td>
+                </tr>
+                <tr>
+                  <td class="details_col1">Шаг колонн:</td>
+                  <td class="details_col2">8х10 м</td>
+                </tr>
+                <tr>
+                  <td class="details_col1">Нагрузка на перекрытия (офисы):</td>
+                  <td class="details_col2">400 кг на м<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td class="details_col1">Нагрузка на перекрытия (архив):</td>
+                  <td class="details_col2">600 кг на м<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td class="details_col1">Парковка</td>
+                  <td class="details_col2">188 подземная / 38 наземная </td>
+                </tr>
+                <tr>
+                  <td class="details_col1">Парковочный коэффициент</td>
+                  <td class="details_col2">1:62 m<sup>2</sup></td>
+                </tr>
+                <tr>
+                  <td class="details_col1">Лифты</td>
+                  <td class="details_col2">3 лифта грузоподъемностью 1000 кг. </td>
+                </tr>
+              </table>
+            </div>
+           </article>
+         </div>
        </div>
-     </div>
-    </section>
-</div>
-<!--==============================footer=================================-->
-  <footer>
-    <div class="footer_inner">
-      <div class="main">
-        <div class="wrapper">
-          <div class="f_left wrapper">
-            <h3 class="bold title4 tpad t_ind">Disclamer</h3>
-            <div class="wrapper f_left footer_sm_box1">
-              <figure class="f_left footer_sm_img">
-                <img src="images/footer_icon1.png" alt="">
-              </figure>
-              <div class="wrapper footer_sm_text">
-                <a href="#" class="link2">
-                  Создатели данного сайта не дают гарантии точности, полноты или актуальности любой информации, размещенной на данном сайте, и не несут ответственности за ошибки и упущения.
-                </a>
+      </section>
+  </div>
+  <!--==============================footer=================================-->
+    <footer>
+      <div class="footer_inner">
+        <div class="main">
+          <div class="wrapper">
+            <div class="f_left wrapper">
+              <h3 class="bold title4 tpad t_ind">Disclamer</h3>
+              <div class="wrapper f_left footer_sm_box1">
+                <figure class="f_left footer_sm_img">
+                  <img src="images/footer_icon1.png" alt="">
+                </figure>
+                <div class="wrapper footer_sm_text">
+                  <a href="#" class="link2">
+                    Создатели данного сайта не дают гарантии точности, полноты или актуальности любой информации, размещенной на данном сайте, и не несут ответственности за ошибки и упущения.
+                  </a>
+                </div>
+              </div>
+              <div class="wrapper f_left footer_sm_box2">
+                <figure class="f_left footer_sm_img">
+                  <img src="images/footer_icon2.png" alt="">
+                </figure>
+                <div class="wrapper footer_sm_text">
+                  <a href="#" class="footer_link">
+                    Золотой сертификат немец- <br>кого общества по устойчиво- <br>му строительству DGNB
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="wrapper f_left footer_sm_box2">
-              <figure class="f_left footer_sm_img">
-                <img src="images/footer_icon2.png" alt="">
-              </figure>
-              <div class="wrapper footer_sm_text">
-                <a href="#" class="footer_link">
-                  Золотой сертификат немец- <br>кого общества по устойчиво- <br>му строительству DGNB
-                </a>
-              </div>
+            <div class="f_left copyright">
+              <h3 class="bold title4 t_ind">Copyright</h3>
+              © 2014 Leninskiy Prospekt 119 <br>
+              Powered by WordPress <br>
+              Designed by <a href="#" class="link1">reweb.mobi</a>
             </div>
-          </div>
-          <div class="f_left copyright">
-            <h3 class="bold title4 t_ind">Copyright</h3>
-            © 2014 Leninskiy Prospekt 119 <br>
-            Powered by WordPress <br>
-            Designed by <a href="#" class="link1">reweb.mobi</a>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+</div>
 </body>
 </html>

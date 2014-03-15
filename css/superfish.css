@@ -71,10 +71,16 @@ li.sfHover li.sfHover .sub_menu_link{}
 
 
 .nav_btn{
-	width: 46px;
-	height: 33px;
 	display: none;
-	background: url(../images/nav_btn_icon.png) 0 0 no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background: url(../images/nav_btn_icon.png) 50% 50% no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 88px;
+	height: 100%;
+}
+.nav_btn:hover,
+.nav_btn.active{
+	background-color: #868686;
 }

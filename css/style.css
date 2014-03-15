@@ -4,20 +4,33 @@
 @import "../css/touchTouch.css";
 article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video{display:block}mark,rp,rt,ruby,summary,time{display:inline}
 /* Global properties ======================================================== */
-html, body{width:100%;height: 100%;}
-.global_wrap{
-  height: 100%;
-  margin-bottom: -100px;
-}
+html, body{width:100%;height: 100%;min-height: 100%;}
+
 body {
   font-family:Arial, Helvetica, sans-serif;
   font-size:13px;
   line-height:17px;
   color:#2e2e2e;
   min-width:1070px;
-  min-height: 650px;
+  position: relative;
   background-color: #6f6e6f;
   -webkit-text-size-adjust: none;
+}
+
+.global_wrap{
+  margin-bottom: 230px;
+}
+.outer_wrap{
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+}
+.homepage .global_wrap{
+  margin-bottom: 0;
+}
+.move .global_wrap, 
+.move [class^="bg_box"]{
+  margin-left: 130px;
 }
 
 .bg_box1{
@@ -32,6 +45,12 @@ body {
 .bg_box4{
   background:url(../images/main_bg4.jpg) 50% 0 no-repeat;
 }
+.bg_box5{
+  background:url(../images/main_bg5.jpg) 50% 0 no-repeat;
+}
+.bg_box_white{
+  background: #fff;
+}
 [class^="bg_box"]{
   -webkit-background-size: cover;
   background-size: cover;
@@ -44,7 +63,10 @@ body {
   width: 1000px;
   margin: 0 auto;
 }
-
+.main1{
+  width: 788px;
+  margin: 0 auto;
+}
 /*----------------------> Links And buttons <------------------*/
 a {
   color:#2e2e2e;
@@ -89,6 +111,12 @@ a:hover{
   text-transform: uppercase;
   font-size: 14px;
   border-bottom: 1px solid #c493aa;
+}
+
+.link4{
+  color: #ff019f;
+  font-size: 11px;
+  text-decoration: underline;
 }
 
 /*----------------------> Basic Classes <------------------*/
@@ -298,11 +326,12 @@ h1.logo a{
   .langs_link.current:after{
     background-color: rgba(255,255,255,0.80);
   }
-
+  
+  .nav_langs{display: none;}
 
 /*=====================> Content ========================*/
-#content {padding:0px 0px 142px; //min-height: 1500px;}
-.cont_pad{padding: 91px 0 40px !important;min-height: 380px;}
+#content {padding:0px 0px 140px; //min-height: 1500px;}
+.cont_pad{padding: 91px 0 0px !important;}
 
 .btns{
   bottom: 12px;
@@ -319,7 +348,6 @@ h1.logo a{
   width: 440px;
   padding: 0 0 0 20px;
 }
-
   
   [class^="big_btn"]{
     font-size: 24px;
@@ -379,7 +407,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7067e', end
 
 /*=====================> Advantages ========================*/
 .advantage_box{
-  padding: 180px 12px 0; 
+  padding: 110px 12px 0; 
 }
   .advantage_col{
     min-height: 100px;
@@ -400,7 +428,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7067e', end
 }
   .content_sidebar{
     width: 200px;
-    min-height: 375px;
+    min-height: 255px;
     -webkit-box-shadow: inset -10px 0 20px rgba(0,0,0,0.2);
     -moz-box-shadow: inset -10px 0 20px rgba(0,0,0,0.2);
     box-shadow: inset -10px 0 20px rgba(0,0,0,0.2);
@@ -438,6 +466,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7067e', end
     }
     .content_text__inner2{
       padding: 11px 25px 0 28px;
+    }
+    .content_text__inner3{
+      padding: 0 25px 0 37px;
     }
 
   .map_content{
@@ -478,7 +509,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7067e', end
   }
   .details_col2{
   }
-  .details_table sup{
+  sup{
     font-size: 8px;
     display: inline-block;
     margin-top: -3px;
@@ -490,6 +521,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7067e', end
   }
   .details_table tr:first-child td{background: none;}
 
+
+.project_members{
+  margin: -8px 0 0 3px;
+}
+.member_row{
+  background: url(../images/separator.jpg) 0 0 repeat-x;
+}
+.member_item{
+  width: 323px;
+  background: url(../images/separator3.jpg) 0 0 repeat-y;
+  padding: 13px 0 18px 15px;
+}
+.member_row .member_item:first-child,
+.project_members .member_row:first-child{
+  background: none;
+}
+  .member_details{
+    width: 180px;
+  }
+    .member_details dt{
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  .member_logo{
+    padding: 22px 0 0;
+  }
 /*=====================> Location Page ========================*/
 .location_box{
   margin-top: -25px;
@@ -514,7 +571,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7067e', end
 .border_img{border: 1px solid #509d7b;}
 
 /*=====================> Gallery Page ========================*/
-.gallery_box{
+.gallery_box,
+.contact_box{
   margin: 0 17px 0 0;
   padding: 23px 0 0;
 }
@@ -606,6 +664,175 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7067e', end
   opacity: 1;
 }
 
+
+/*=====================> News Page ========================*/
+
+.news_item{
+  background: url(../images/separator.jpg) 0 0 repeat-x;
+  padding: 17px 0 15px;
+}
+.news_list .news_item:first-child{background: none;margin-top: 0;}
+.news_title,
+.news_title a{
+  font-size: 14px;
+  color: #161616;
+}
+.news_time{
+  color: #550035;
+  font-style: italic;
+  display: block;
+  padding: 5px 0;
+}
+.quote_box{
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  font-style: italic;
+  padding: 28px 10px 30px 23px;
+}
+/*=====================> Premises Page ========================*/
+.premises_details{
+  width: 452px;
+  left: 50%;
+  top: 92px;
+  margin-left: -500px;
+  z-index: 1;
+  padding: 22px 0 34px;
+  border: 1px solid #baccbc;
+}
+.premises_details .title1{
+  margin-left: -1px;
+}
+.premises_details .title1 span{
+  padding-left: 20px;
+  font-size: 14px;
+}
+.premises_inner{
+  padding: 37px 0 0 39px;
+}
+.premises_list{
+  margin-bottom: 23px;
+}
+.premises_list_item{
+  margin-bottom: 5px;
+}
+.premises_img{
+  left: 50%;
+  top: 85px;
+  margin: 0 0 0 -207px;
+  width: 753px;
+  height: 473px;
+}
+.premises_label{
+  display: inline-block;
+  width: 235px;
+}
+.order_btn{
+  display: inline-block;
+  position: absolute;
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 20px 9px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  right: 35px;
+  bottom: 29px;
+  letter-spacing: -1px;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  background: rgb(204,68,152);
+  background: -moz-linear-gradient(top,  rgba(204,68,152,1) 0%, rgba(188,63,140,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,68,152,1)), color-stop(100%,rgba(188,63,140,1)));
+  background: -webkit-linear-gradient(top,  rgba(204,68,152,1) 0%,rgba(188,63,140,1) 100%);
+  background: -o-linear-gradient(top,  rgba(204,68,152,1) 0%,rgba(188,63,140,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(204,68,152,1) 0%,rgba(188,63,140,1) 100%);
+  background: linear-gradient(to bottom,  rgba(204,68,152,1) 0%,rgba(188,63,140,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc4498', endColorstr='#bc3f8c',GradientType=0 );
+}
+.order_btn:hover{
+  background: rgb(188,63,140);
+  background: -moz-linear-gradient(top,  rgba(188,63,140,1) 0%, rgba(204,68,152,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(188,63,140,1)), color-stop(100%,rgba(204,68,152,1)));
+  background: -webkit-linear-gradient(top,  rgba(188,63,140,1) 0%,rgba(204,68,152,1) 100%);
+  background: -o-linear-gradient(top,  rgba(188,63,140,1) 0%,rgba(204,68,152,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(188,63,140,1) 0%,rgba(204,68,152,1) 100%);
+  background: linear-gradient(to bottom,  rgba(188,63,140,1) 0%,rgba(204,68,152,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc3f8c', endColorstr='#cc4498',GradientType=0 );
+
+}
+.premises_pager{
+  position: absolute;
+  left: 186px;
+  top: 51px;
+}
+.pager_item{
+  display: block;
+  width: 19px;
+  height: 19px;
+  margin-bottom: 7px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #c390af;
+  background-color: #dfbed2;
+  color: #b9167b;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+.pager_item:hover,
+.pager_item.current{
+  color: #fff;
+  background-color: #b9167b;
+  border-color: #961565;
+}
+/*=====================> Contacts Page ========================*/
+
+.contacts{
+  padding: 23px 0 19px 19px;
+}
+.contact_col{
+  background: url(../images/separator3.jpg) 0 0 repeat-y;
+  width: 476px;
+}
+.address_logo_box{
+  padding: 2px 0 30px;
+  height: 51px;
+  background: url(../images/separator.jpg) 0 bottom repeat-x;
+}
+.address_logo{
+  padding: 4px 0 0 20px;
+  width: 236px;
+}
+.contacts .contact_col:first-child{
+  background: none;
+}
+.contacts .contact_col:first-child .address_logo{
+  padding-left: 0;
+}
+.address_list_box{
+  background: url(../images/separator.jpg) 0 bottom repeat-x; 
+}
+.address_list{
+  padding: 20px 10px 29px 21px;
+  width: 203px;
+  background: url(../images/separator3.jpg) 0 0 repeat-y;
+}
+.contacts .contact_col:first-child .address_list:first-child{
+  background: none;
+  padding-left: 0;
+}
+.address_list dt{
+  color: #161616;
+  font-size: 14px;
+}
 /*=====================> Paragraphs ========================*/
 
 p {margin-bottom:5px}
@@ -665,11 +892,13 @@ p {margin-bottom:5px}
 }
 .list2_link{
   color: #fff;
+  text-decoration: underline;
   display: inline-block;
 }
 .list2_link:hover,
 .current .list2_link{
   color: #550035;
+  text-decoration: none;
 }
 .dk_green_bg .list2_link:hover,
 .dk_green_bg .current .list2_link{
@@ -686,6 +915,21 @@ p {margin-bottom:5px}
 }
 .list3_link{}
 
+.list4{
+  padding: 0 0 0 0px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.list4_item{
+  background:url(../images/marker3.png) 1px 6px no-repeat;
+  padding-left:20px;
+  margin-top: 5px;
+}
+.list4_link{
+  text-transform: uppercase;
+  color: #b41778;
+  text-decoration: underline;
+}
 /*=====================> Titles ========================*/
 h1,h2,h3,h4{
   font-weight:normal;
@@ -721,6 +965,9 @@ h1,h2,h3,h4{
   .green_bg.title1 span:after{
     background: url(../images/title_bg1.png) 0 0 no-repeat;
   }
+  .title1.var2 span{
+    padding-left: 37px;
+  } 
 
 .title2{
   font-size: 18px;
@@ -735,9 +982,10 @@ h1,h2,h3,h4{
 }
 
 .title3{
-  font-size: px;
-  line-height: px;
-  color:#;
+  font-size: 14px;
+  line-height: 20px;
+  color:#b41778;
+  text-transform: uppercase;
 }
 
 .title4{
@@ -897,11 +1145,16 @@ h1,h2,h3,h4{
 </div>
 */
 
-/*================================>> Footer <<========================================*/
+/*================================>> `` <<========================================*/
 footer{
   color: #d6d6d6;
   font-size: 12px;
   line-height: 16px;
+  height: 215px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background: url(../images/footer_bg.png) 50% 0 no-repeat;
 }
 footer a{
