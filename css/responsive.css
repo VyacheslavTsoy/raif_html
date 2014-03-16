@@ -50,7 +50,12 @@
 	.main1{width: 748px;}
 	header,
 	.content_text.var2,
-	.content_text{width: auto;}
+	.content_text{width: auto;overflow: hidden;}
+	.content_text__inner3{
+		height: 280px;
+		margin-right: -20px;
+		overflow-y: auto;
+	}
 	.global_wrap{margin-bottom: 70px;}
 	.content_text:after{
 		-webkit-background-size: contain;
