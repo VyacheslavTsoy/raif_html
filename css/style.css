@@ -577,7 +577,44 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7067e', end
 .contact_box{
   margin: 0 17px 0 0;
   padding: 23px 0 0;
+  position: relative;
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0 0 15px rgba(0,0,0,0.35);
+  box-shadow: 0 0 15px rgba(0,0,0,0.35);
 }
+
+.bottom_bg{
+  height: 36px;
+  bottom: -36px;
+  left: 220px;
+  right: 200px;
+}
+  .bottom_bg:before,
+  .bottom_bg:after{
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    top: 0;
+    background-color: rgba(208,223,209,0.9);
+    content: "";
+  }
+  .bottom_bg:before{
+    left: -10px;  
+    -moz-transform: skewX(25deg);
+    -webkit-transform: skewX(25deg);
+    -o-transform: skewX(25deg);
+    -ms-transform: skewX(25deg);
+    transform: skewX(25deg);
+  }
+  .bottom_bg:after{
+    right: -10px;
+    -moz-transform: skewX(-25deg);
+    -webkit-transform: skewX(-25deg);
+    -o-transform: skewX(-25deg);
+    -ms-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+  }
 
 .gallery{
   padding: 39px 0 0 12px;

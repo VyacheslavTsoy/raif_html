@@ -42,6 +42,6 @@ if(!result){
 }
 document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0'+userScale+'">')
 
-$(window).load(function(){
-  
+$(function(){
+  $(".gallery_box, .contact_box").append("<div class='p_abs green_bg bottom_bg'></div>");
 })

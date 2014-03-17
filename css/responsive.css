@@ -50,12 +50,7 @@
 	.main1{width: 748px;}
 	header,
 	.content_text.var2,
-	.content_text{width: auto;overflow: hidden;}
-	.content_text__inner3{
-		height: 280px;
-		margin-right: -20px;
-		overflow-y: auto;
-	}
+	.content_text{width: auto;}
 	.global_wrap{margin-bottom: 70px;}
 	.content_text:after{
 		-webkit-background-size: contain;
@@ -209,8 +204,19 @@
 	}
 	.sub_menu_link{
 		padding: 0;
+    	line-height: 24px;
 		height: 82px;
-		line-height: 82px;
+	}
+	.sub_menu_link span{
+		vertical-align:middle;
+		display: inline-block;
+	}
+	.sub_menu_link:after{
+		display:inline-block;
+	    vertical-align:middle;
+	    height:100%;
+	    width:0px;
+	    content: "";
 	}
 	.sf-menu ul{
 		position: static;
@@ -257,7 +263,8 @@
 	.premises_details{position: relative;left: 0;margin-left: 20px;top: 10px;}
 	.premises_img{width: 550px;left: auto;right: 0;}
 	.premises_pager{left: 180px;}
-
+	
+	.bottom_bg{left: 100px;right: 100px;}
 
 	/* -------- Footer ----------*/
 	footer{padding-bottom: 20px;position: relative;height: auto;}
@@ -267,6 +274,13 @@
 	}
 	.footer_sm_box2 {
 		width: 255px;
+	}
+}
+
+@media only screen and (min-height: 995px){
+	footer{
+		position: absolute;
+		bottom: 0;
 	}
 }
 
@@ -418,9 +432,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d3544', end
 	.map,
 	.content_text__inner{padding: 20px 20px;}
 	.title1 span{min-width: 0;padding: 10px 30px 4px;}
-	.contact_col{float: none;width: auto;background: none;margin-bottom: 30px;}
-	.contacts{padding: 20px;}
+	/*.contact_col{float: none;width: auto;background: none;margin-bottom: 30px;}*/
+	.contacts{padding: 20px 0;}
 	.list1_item:after{right: 10px;}
+	.address_logo{width: auto;}
+	.address_logo_box{padding-left: 10px;padding-right: 10px;}
 	footer{
 		background: rgb(111,110,111);
 		background: -moz-linear-gradient(top,  rgba(111,110,111,1) 0%, rgba(84,84,84,1) 100%);
@@ -451,9 +467,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f6e6f', end
 	.order_btn{position: relative;margin: 40px 30px 0;}
 	.premises_inner{padding-right: 20px;}
 	.premises_img{padding: 0;}
+
+	.bottom_bg{left: 18px;right: 18px;}
+
+	.content_text__inner2{padding-bottom: 20px;}
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 479px){
 	body{min-width:300px;}
 	.homepage .main{
 		width: 300px;
@@ -473,7 +493,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f6e6f', end
 	}
 	.btns .btns_col:first-child, .btns_col{display: block;text-align: center;width: auto;margin-bottom: 20px;}
 	.btns{top: 200px;}
-	.gallery{text-align: center;padding-right: 30px;padding-left: 30px;}
-	.gallery_item{float: none;margin: 0;}
-	.gallery_item img{width: 100%;}
+	.gallery{text-align: center;padding-right: 40px;padding-left: 40px;}
+	.gallery_item{float: none;margin: 0;display: inline-block;}
+	
+}
+@media only screen and (max-width: 330px){
+	.gallery{padding-right: 20px;padding-left: 20px;}
 }
