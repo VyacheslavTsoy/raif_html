@@ -286,6 +286,93 @@
 
 @media only screen and (max-width: 767px) {
 	body{min-width:420px;}
+	.bottom_resp_arrow{
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 50px;
+	}
+	.bottom_resp_arrow:after{
+		display: block;
+		width: 10px;
+		height: 11px;
+		position: absolute;
+		/*top: 50%;*/
+		left: 50%;
+		margin: -5px 0 0 -5px;
+		background: url(../images/bottom_arrow.png) 50% 50% no-repeat;
+		content: "";
+	  animation: animationFrames linear 0.8s;
+	  animation-iteration-count: 100;
+	  transform-origin: ;
+	  -webkit-animation: animationFrames linear 0.8s;
+	  -webkit-animation-iteration-count: 100;
+	  -webkit-transform-origin: ;
+	  -moz-animation: animationFrames linear 0.8s;
+	  -moz-animation-iteration-count: 100;
+	  -moz-transform-origin: ;
+	  -o-animation: animationFrames linear 0.8s;
+	  -o-animation-iteration-count: 100;
+	  -o-transform-origin: ;
+	  -ms-animation: animationFrames linear 0.8s;
+	  -ms-animation-iteration-count: 100;
+	  -ms-transform-origin: ;
+	}
+
+	@keyframes animationFrames{
+	  0% {
+	    top:50%;
+	  }
+	  40% {top:70%;}
+	  80% {top:40%;}
+	  100% {
+	  	top:50%;
+	    opacity:1;}
+	}
+
+	@-moz-keyframes animationFrames{
+	   0% {
+	    top:50%;
+	  }
+	  40% {top:70%;}
+	  80% {top:40%;}
+	  100% {
+	  	top:50%;
+	    opacity:1;}
+	}
+
+	@-webkit-keyframes animationFrames {
+	   0% {
+	    top:50%;
+	  }
+	  40% {top:70%;}
+	  80% {top:40%;}
+	  100% {
+	  	top:50%;
+	    opacity:1;}
+	}
+
+	@-o-keyframes animationFrames {
+	 0% {
+	    top:50%;
+	  }
+	  40% {top:70%;}
+	  80% {top:40%;}
+	  100% {
+	  	top:50%;
+	    opacity:1;}
+	}
+
+	@-ms-keyframes animationFrames {
+	   0% {
+	    top:50%;
+	  }
+	  40% {top:70%;}
+	  80% {top:30%;}
+	  100% {
+	  	top:50%;
+	    opacity:1;}
+	}
 	.main,
 	.main1{width: 420px;}
 	.bg_box{
