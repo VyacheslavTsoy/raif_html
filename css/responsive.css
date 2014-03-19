@@ -384,7 +384,9 @@
 	}
 	.gallery_item{margin-left: 20px;margin-right: 20px;}
 
-	
+	.address_list{
+		height: 220px;
+	}
 	.homepage #content{
 		padding: 430px 0 0;
 		overflow: hidden;
