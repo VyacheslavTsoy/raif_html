@@ -15,7 +15,5 @@ $(window).load(function(){
 	}
 })
 $(window).resize(function(){
-	if($(document).width()<767){
-		if($(".maxheight").length){$(".maxheight").equalHeights()}
-	}
+	if($(".maxheight").length){$(".maxheight").equalHeights()}
 })
