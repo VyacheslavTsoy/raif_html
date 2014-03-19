@@ -109,6 +109,8 @@
 	}
 	.nav_btn{
 		display: block;
+		-webkit-background-size: 23px auto;
+		background-size: 23px auto;
 	}
 	
 
@@ -116,11 +118,11 @@
 	h1.logo{
 		margin: 0 auto;
 		width: 160px;
-		padding-top: 15px;
+		padding-top: 5px;
 	}
 	.header_inner{
 		padding: 0 13px;
-		height: 68px;
+		height: 50px;
 	}
 
 	/* -------- NAV ----------*/
@@ -141,7 +143,7 @@
 		overflow: scroll!important;
 		overflow-x: hidden!important;
 		height: 100%;
-		width: 150px;
+		width: 95px;
 	}
 	.sf-menu li,
 	.sub_menu_item,
@@ -159,8 +161,8 @@
 	.menu_link,
 	.sub_menu_link{
 		text-align: center;
-		padding: 6px 0 24px;
-		font-size: 18px;
+		padding: 6px 0 14px;
+		font-size: 13px;
 		color: #828282;
 		text-shadow: 1px 1px 1px #252729;
 		border-bottom: 1px solid #000;
@@ -230,11 +232,11 @@
 	.nav_lang__item{
 		float: left;
 		font-size: 14px;
-		line-height: 69px;
+		line-height: 39px;
 		color: #828282;
 		text-transform: uppercase;
-		width: 64px;
-		height: 69px;
+		width: 39px;
+		height: 39px;
 		text-align: center;
 		text-shadow: 1px 1px 1px #252729;
 		border-left: 1px solid #000;
@@ -258,7 +260,8 @@
 	.contacts .contact_col:first-child .address_list:first-child,
 	.address_list{padding: 20px 20px;background: none;width: auto;float: none;}
 	.address_logo{float: none;margin-bottom: 20px;padding: 0;}
-	.address_list_box{background: none;}
+	.address_list_box{background: none;-ms-word-wrap: break-word;
+	word-wrap: break-word;}
 	
 	.premises_details{position: relative;left: 0;margin-left: 20px;top: 10px;}
 	.premises_img{width: 550px;left: auto;right: 0;}
@@ -419,8 +422,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a3141', end
 		right: 42px;
 	}
 	.project_status__inner{
-		font-size: 18px;
-		padding: 10px 40px;
+		font-size: 13px;
+		line-height: 17px;
+		padding: 8px 40px;
 		height: auto;
 	}
 	.project_status:before, .project_status:after{

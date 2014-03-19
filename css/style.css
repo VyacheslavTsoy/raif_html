@@ -31,7 +31,7 @@ body {
 /*.move .global_wrap, 
 .move [class^="bg_box"]*/
 .move .outer_wrap{
-  left: 130px;
+  left: 80px;
 }
 
 .bg_box1{

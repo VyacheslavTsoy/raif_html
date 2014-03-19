@@ -5,7 +5,7 @@ $(document).ready(function(){
 		function(){
 			$(this).toggleClass("active");
 			$('nav').animate({
-				width: '130',
+				width: '80',
 		  	}, 200, function() {
 				// Animation complete.
 		  	});

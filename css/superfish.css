@@ -77,8 +77,10 @@ li.sfHover li.sfHover .sub_menu_link{}
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 88px;
+	width: 68px;
 	height: 100%;
+	
+	
 }
 .nav_btn:hover,
 .nav_btn.active{

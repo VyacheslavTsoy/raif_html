@@ -15,8 +15,7 @@ $(window).load(function(){
 	}
 })
 $(window).resize(function(){
-	$(".maxheight").css({height:'auto'});
-	if($(document).width()>767){
+	if($(document).width()<767){
 		if($(".maxheight").length){$(".maxheight").equalHeights()}
 	}
 })
