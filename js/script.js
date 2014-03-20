@@ -44,9 +44,15 @@ document.write('<meta name="viewport" content="width=device-width,initial-scale=
 
 $(function(){
   $(".gallery_box, .contact_box").append("<div class='p_abs green_bg bottom_bg'></div>");
-  $("body").append("<div class='p_fix green_bg bottom_resp_arrow'></div>");
+  
+  var main = $("body");
+  var outer_wrap = $(".outer_wrap");
+  if(outer_wrap.height()> main.height()){
+    $(main).append("<div class='p_fix green_bg bottom_resp_arrow'></div>");
+  }
   window.onscroll = function() {
     $(".bottom_resp_arrow").fadeOut("slow");
   }
+
 })
 
