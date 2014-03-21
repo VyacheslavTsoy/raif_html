@@ -13,32 +13,18 @@ $(function(){
 	};
 	
 	scaleFix();
-	// Menu Android
-	if(window.orientation!=undefined){
-    var regM = /ipod|ipad|iphone/gi,
-     result = ua.match(regM)
-    if(!result) {
-     $('.sf-menu li').each(function(){
-      if($(">ul", this)[0]){
-       $(">a", this).toggle(
-        function(){
-         return false;
-        },
-        function(){
-         window.location.href = $(this).attr("href");
-        }
-       );
-      } 
-     })
-    }
-   } 
-});
+})
+
 var ua=navigator.userAgent.toLocaleLowerCase(),
  regV = /ipod|ipad|iphone/gi,
  result = ua.match(regV),
  userScale="";
 if(!result){
- userScale=",user-scalable=0"
+  $(".sf-with-ul>a").one("click",function(){
+    $(this).next().slideToggle();
+    event.preventDefault();
+  })
+  userScale=",user-scalable=0"
 }
 document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0'+userScale+'">')
 
