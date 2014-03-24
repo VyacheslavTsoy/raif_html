@@ -782,6 +782,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc3f8c', end
   position: absolute;
   left: 186px;
   top: 51px;
+  z-index: 10;
 }
 .pager_item{
   display: block;
@@ -803,6 +804,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc3f8c', end
   color: #fff;
   background-color: #b9167b;
   border-color: #961565;
+}
+
+[class^="floor_highlight"]{
+  position: absolute;
+  width: 372px;
+  height: 36px;
+  right: 156px;
+  top: 45px;
+  display: none;
+  background: url(../images/hilghlight_floor.png) no-repeat;
+}
+.floor_highlight2{
+  top: 69px;
+}
+.floor_highlight3{
+  top: 94px;
+}
+.floor_highlight4{
+  top: 119px;
+}
+.floor_highlight5{
+  top: 138px;
+  background: url(../images/highlight_floor3.png) 0 0 no-repeat;
+  height: 50px;
+}
+.floor_highlight6{
+  top: 160px;
+  height: 50px;
+  background: url(../images/highlight_floor2.png) 0 0 no-repeat;
+}
+.floor_highlight7{
+  top: 185px;
+  height: 50px;
+  background: url(../images/highlight_floor2.png) 0 0 no-repeat;
+}
+.floor_highlight8{
+  top: 210px;
+  height: 60px;
+  background: url(../images/highlight_floor4.png) 0 0 no-repeat;
+}
+.floor_highlight9{
+  top: 205px;
+  width: 736px;
+  right: 8px;
+  height: 243px;
+  background: url(../images/highlight_floor5.png) 0 0 no-repeat;
 }
 /*=====================> Contacts Page ========================*/
 

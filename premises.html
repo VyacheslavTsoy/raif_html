@@ -128,18 +128,26 @@
        </div>
        <div class="p_abs premises_img">
         <div class="cuprum premises_pager">
-          <a class="pager_item" href="#">8</a>
-          <a class="pager_item" href="#">7</a>
-          <a class="pager_item" href="#">6</a>
-          <a class="pager_item" href="#">5</a>
-          <a class="pager_item current" href="#">4</a>
-          <a class="pager_item" href="#">3</a>
-          <a class="pager_item" href="#">2</a>
-          <a class="pager_item" href="#">1</a>
-          <a class="pager_item" href="#">-1</a>
+          <a class="pager_item" data-floor="9" href="#">8</a>
+          <a class="pager_item" data-floor="8" href="#">7</a>
+          <a class="pager_item" data-floor="7" href="#">6</a>
+          <a class="pager_item" data-floor="6" href="#">5</a>
+          <a class="pager_item current" data-floor="5" href="#">4</a>
+          <a class="pager_item" data-floor="4" href="#">3</a>
+          <a class="pager_item" data-floor="3" href="#">2</a>
+          <a class="pager_item" data-floor="2" href="#">1</a>
+          <a class="pager_item" data-floor="1" href="#">-1</a>
         </div>
         <img src="images/premises_img.png" alt="">
-        <div class="floor_highlight"></div>
+        <div class="floor_highlight1"></div>
+        <div class="floor_highlight2"></div>
+        <div class="floor_highlight3"></div>
+        <div class="floor_highlight4"></div>
+        <div class="floor_highlight5"></div>
+        <div class="floor_highlight6"></div>
+        <div class="floor_highlight7"></div>
+        <div class="floor_highlight8"></div>
+        <div class="floor_highlight9"></div>
        </div>
       </section>
   </div>
@@ -182,5 +190,13 @@
       </div>
     </footer>
 </div>
+<script>
+  $(function() {
+    $(".pager_item").on("hover", function(){
+      var floor = $(this).data("floor");
+      $('.floor_highlight1').fadeIn();
+    })
+  })
+</script>
 </body>
 </html>
