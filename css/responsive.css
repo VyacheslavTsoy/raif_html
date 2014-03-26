@@ -149,17 +149,17 @@
 		width: 90px;
 	}
 	.sf-menu li,
-	.sub_menu_item,
+	.menu-item,
 	.sf-menu ul li{
 		width: 129px;
 		float: none;
 		border-left: 1px solid #000;
 	}
-	.sub_menu, li.sfHover>.sub_menu{
+	.sub-menu, li.sfHover>.sub-menu{
 		padding:0;
 		background-color: transparent;
 	}
-	.sub_menu_item{border-top: none;}
+	.menu-item{border-top: none;}
 
 	.menu_link,
 	.sub_menu_link{
@@ -177,24 +177,24 @@
 	.sub_menu_link:hover{
 		color: #808080;
 	}
-	.sub_menu, li.sfHover>.sub_menu{
+	.sub-menu, li.sfHover>.sub-menu{
 		width: auto;
 		border: none;
 		background: #606163;
 	}
-	.sf-menu li, .sub_menu_item, .sf-menu ul li{width: auto;border: none;}
-	[class^="icon_"]{
+	.sf-menu li, .menu-item, .sf-menu ul li{width: auto;border: none;}
+	[class^="icon_"] span{
 		display: block;
 		margin: 5px auto 0;
 		background: url(../images/menu_icons.png) no-repeat;
 	}
-	.icon_about{ background-position: 0 0; width: 37px; height: 39px; } 
-	.icon_contacts{ background-position: 0 -189px; width: 52px; height: 32px; } 
-	.icon_gallery{ background-position: 0 -371px; width: 52px; height: 30px; } 
-	.icon_home{ background-position: 0 -551px; width: 37px; height: 34px; } 
-	.icon_location{ background-position: 0 -735px; width: 52px; height: 28px; } 
-	.icon_news{ background-position: 0 -913px; width: 52px; height: 33px; } 
-	.icon_permisses{ background-position: 0 -1096px; width: 52px; height: 41px; } 
+	.icon_about span{ background-position: 0 0; width: 37px; height: 39px; } 
+	.icon_contacts span{ background-position: 0 -189px; width: 52px; height: 32px; } 
+	.icon_gallery span{ background-position: 0 -371px; width: 52px; height: 30px; } 
+	.icon_home span{ background-position: 0 -551px; width: 37px; height: 34px; } 
+	.icon_location span{ background-position: 0 -735px; width: 52px; height: 28px; } 
+	.icon_news span{ background-position: 0 -913px; width: 52px; height: 33px; } 
+	.icon_permisses span{ background-position: 0 -1096px; width: 52px; height: 41px; } 
 
 	.current .menu_link,
 	.menu_link:hover,
@@ -210,6 +210,7 @@
 		padding: 0 10px 0 0;
     	line-height: 20px;
 		height: 60px;
+		display: block;
 	}
 	.sub_menu_link span{
 		vertical-align:middle;

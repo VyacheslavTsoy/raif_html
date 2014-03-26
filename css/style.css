@@ -810,46 +810,57 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc3f8c', end
   position: absolute;
   width: 372px;
   height: 36px;
-  right: 156px;
+  right: 155px;
   top: 45px;
-  display: none;
-  background: url(../images/hilghlight_floor.png) no-repeat;
+  opacity:0;  
+  cursor:pointer;
+}
+[class^="floor_highlight"]:hover{
+ 
+}
+.floor_highlight1{
+  background: url(../images/highlight_floor9.png) no-repeat;
 }
 .floor_highlight2{
   top: 69px;
+  background: url(../images/highlight_floor8.png) no-repeat;
 }
 .floor_highlight3{
-  top: 94px;
+  top: 91px;
+  height: 57px;
+  background: url(../images/highlight_floor7.png) no-repeat;
 }
 .floor_highlight4{
-  top: 119px;
+  top: 114px;
+  height: 49px;
+  background: url(../images/highlight_floor6.png) no-repeat;
 }
 .floor_highlight5{
   top: 138px;
-  background: url(../images/highlight_floor3.png) 0 0 no-repeat;
+  background: url(../images/highlight_floor5.png) no-repeat;
   height: 50px;
 }
 .floor_highlight6{
   top: 160px;
-  height: 50px;
-  background: url(../images/highlight_floor2.png) 0 0 no-repeat;
+  height: 57px;
+  background: url(../images/highlight_floor4.png) no-repeat;
 }
 .floor_highlight7{
-  top: 185px;
-  height: 50px;
-  background: url(../images/highlight_floor2.png) 0 0 no-repeat;
+  top: 190px;
+  height: 57px;
+  background: url(../images/highlight_floor3.png) no-repeat;
 }
 .floor_highlight8{
-  top: 210px;
+  top: 230px;
   height: 60px;
-  background: url(../images/highlight_floor4.png) 0 0 no-repeat;
+  background: url(../images/highlight_floor2.png) no-repeat;
 }
 .floor_highlight9{
   top: 205px;
   width: 736px;
   right: 8px;
   height: 243px;
-  background: url(../images/highlight_floor5.png) 0 0 no-repeat;
+  background: url(../images/highlight_floor1.png) no-repeat;
 }
 /*=====================> Contacts Page ========================*/
 

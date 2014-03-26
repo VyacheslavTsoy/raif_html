@@ -37,8 +37,8 @@ li.sfHover .menu_link{
 }
 
 /*================================>> 2 Level <<========================================*/
-.sub_menu,
-li.sfHover>.sub_menu{
+.sub-menu,
+li.sfHover>.sub-menu{
 	left:-1px;top:54px;
 	width: 221px;
 	padding:4px 0;
@@ -46,10 +46,10 @@ li.sfHover>.sub_menu{
 	z-index:99;
 	border: 1px solid #707070;
 }
-.sub_menu_item{
+.menu-item{
 	border-top: 1px solid #6e6e6e;
 }
-.sub_menu .sub_menu_item:first-child{
+.sub_menu .menu-item:first-child{
 	border: none;
 }
 .sub_menu_link{
